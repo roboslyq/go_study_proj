@@ -21,7 +21,7 @@ type Person struct {
 	Age  int
 }
 
-//  (p Person) ：此方法所属结构体
+//  (p Person) ：此方法所属结构体（go中的名词叫“接收者”）
 // getName()：方法名称
 // string : 方法返回参数类型
 func (p Person) getName() string {
