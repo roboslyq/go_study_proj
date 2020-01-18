@@ -3,6 +3,9 @@ package main
 import "fmt"
 import "time"
 
+/*
+ * Go语言中的多线程
+ */
 func main() {
 	//用户可能通过 Enter键停止程序
 	go running()

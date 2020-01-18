@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"study/grammar/packagedemo"
+	//pkg 为导入包的别名，有了别名后就不能使用原包名packagedemo
+	pkg "study/grammar/packagedemo"
 )
 
 func main() {
-	fmt.Printf("欢迎使用go语言 \n")
-	demo := new(packagedemo.Packagedemo)
+	demo := new(pkg.Packagedemo)
 	demo.Name = "roboslyq"
 	fmt.Printf(demo.Name)
 	demo.ShowName()
+	//不能访问
+	//demo.playName()
 }
