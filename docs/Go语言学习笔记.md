@@ -80,7 +80,7 @@ https://blog.csdn.net/guidao13/article/details/81839771
 
 #### GOPATH
 
-![2](docs/images/2.jpg)
+![2](images/2.jpg)
 
 ##　GO语言的标准目录　
 
