@@ -15,13 +15,14 @@ import (
 func main() {
 	condController()
 	forController()
+	switchDemo()
 }
 
 /**
  *if判断语句
  */
 func condController() {
-	var a = rand.Int31n(10)
+	var a = rand.Int31n(1)
 	if a >= 5 {
 		fmt.Printf("a大于等于5，a == %d \n", a)
 	} else {
@@ -71,5 +72,23 @@ func forController() {
 				fmt.Printf("%d 是素数 \n", j)
 			}
 		}
+	}
+}
+
+/*
+switch语法
+*/
+
+func switchDemo() {
+	val := 1
+	switch val {
+	case 1:
+		fmt.Println("switch val:", val)
+	case 2:
+		fmt.Println("switch val:", val)
+	case 3:
+		fmt.Println("switch val:", val)
+	default:
+		fmt.Println("switch default:", val)
 	}
 }
