@@ -4,15 +4,13 @@
 >
 > Go（又称Golang）是Google开发的一种`静态强类型`、`编译型`、`并发型`，并具有`垃圾回收功能`的编程语言。
 >
+> > 静态可以简单理解为在编译时就确定了具体类型，而不能在运行时动态绑定。
+>
 > Go的语法接近`C语言`，所以很多概念与C语言保持一致。但GO又是一门十分年轻的语言，因此借鉴了很多C语言的相关设计经验，简化了很多。但对于变量的声明有所不同,有人说GO语言是C语言的网络版。
 >
 > Go支持垃圾回收功能。
 >
-> Go即是面向过程语言也是面向对象语言(通过Struct结构实现)
-
-## 什么是Go语言
-
-> 网络版本的C语言
+> Go即是面向过程语言也是面向对象语言(通过Struct结构实现)。
 
 ## 历史版本
 
@@ -62,15 +60,27 @@
 
 2019年x月x日，Go语言Go 1.13版发布。 [19]
 
-# Goland的环境搭建
+## Goland的环境搭建
 
 https://blog.csdn.net/guidao13/article/details/81839771
 
-## 下载安装
+### 下载安装
 
-## 配置IDEA
+> <https://golang.google.cn/dl/>
 
-## 配置GOROOT和GOPATH
+### 配置IDEA
+
+不官是IDEA还是其它环境，GO语言最重的参数只有两个，GOROOT和GOPATH。其中GOROOT是指你的GO SDK安装路径，这个可以类型JavaJDK。
+
+ GO语言的项目管理与Java不同，没有Maven等类似工具插件，而是在语言层面规定了一般项目应该有的结构。首先，最关键一的是通过环境变量GOPATH指定了工作空间。注意：此变量可以分为全局的和局部的。
+
+#### GOROOT
+
+![1](https://github.com/roboslyq/go_study_proj/tree/master/docs/images/1.jpg)
+
+#### GOPATH
+
+![2](https://github.com/roboslyq/go_study_proj/tree/master/docs/images/2.jpg)
 
 ##　GO语言的标准目录　
 
