@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 /**
@@ -10,8 +11,12 @@ Interface学习：
 2、实现interface:结构体
 */
 func main() {
+	var t int
+	typeOfA := reflect.TypeOf(t)
+	fmt.Println(typeOfA.Name(), typeOfA.Kind())
 	//创建结构体实例
 	c := new(cat)
+	fmt.Println("test" + reflect.TypeOf(c).Name())
 	c1 := &cat{}
 	c3 := &cat{
 		name: "z",

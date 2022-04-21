@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	//pkg 为导入包的别名，有了别名后就不能使用原包名packagedemo
-	pkg "study/grammar/packagedemo"
+	pkg "go_study_proj/package/packagedemo"
 )
 
 func main() {
