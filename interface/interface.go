@@ -22,6 +22,10 @@ func main() {
 		name: "z",
 		age:  0,
 	}
+	c4 := &cat{
+		"roboslyq",
+		10,
+	}
 	//结构体初始化赋值
 	c.name = "roboslyq"
 	c.age = 18
@@ -40,8 +44,17 @@ func main() {
 	c.show()
 	c1.show()
 	c3.show()
+	c4.show()
+
+	// 多态的实现
+	d := &dog{}
+	a = d
+	a.eat("玉米")
 }
 
+/*
+ 接口定义
+*/
 type animal interface {
 	eat(food string) string
 }
@@ -60,4 +73,12 @@ func (c cat) show() string {
 	fmt.Printf("cat name %s \n", c.name)
 	fmt.Printf("cat age %d \n", c.age)
 	return "finish"
+}
+
+type dog struct {
+}
+
+func (d *dog) eat(food string) string {
+	fmt.Printf("dog在吃%s", food)
+	return "吃完啦！"
 }
